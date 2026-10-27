@@ -6,7 +6,7 @@ import { ServiceDepartamentos } from '../../services/service.departamentos';
   selector: 'app-home-component',
   standalone: false,
   styleUrl: './home-component.css',
-  templateUrl: './home-component.html',
+  templateUrl: './home-component.html'
 })
 
 export class HomeComponent implements OnInit {
