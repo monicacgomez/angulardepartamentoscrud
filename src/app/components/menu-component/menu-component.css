@@ -1,0 +1,137 @@
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  padding: 12px 28px;
+  background-color: #f3e5b8 !important;
+  border-bottom: 1px solid #dfc995;
+}
+
+/* Contenedor */
+.navbar .container-fluid {
+  gap: 20px;
+}
+
+/* Logo */
+.navbar-brand img {
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Enlaces del menú */
+.navbar .nav-link {
+  padding: 10px 16px !important;
+  color: #70552f !important;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s ease,
+              color 0.2s ease;
+  border-radius: 7px;
+}
+
+/* Enlace activo */
+.navbar .nav-link.active {
+  color: #60452a !important;
+  font-weight: 700;
+}
+
+/* Hover de enlaces */
+.navbar .nav-link:hover {
+  background-color: #e8d8b2;
+  color: #604b2d !important;
+}
+
+/* Enlaces deshabilitados */
+.navbar .nav-link.disabled {
+  color: #aa997c !important;
+  opacity: 0.7;
+}
+
+/* Menú desplegable */
+.navbar .dropdown-menu {
+  padding: 8px;
+  background-color: #fffdf5;
+  border: 1px solid #e8d9b8;
+  border-radius: 9px;
+  box-shadow: 0 4px 12px rgba(98, 80, 59, 0.10);
+}
+
+/* Opciones del desplegable */
+.navbar .dropdown-item {
+  padding: 9px 12px;
+  color: #62503b;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Hover del desplegable */
+.navbar .dropdown-item:hover {
+  background-color: #faf3e3;
+  color: #70552f;
+}
+
+/* Separador */
+.navbar .dropdown-divider {
+  border-color: #e8d9b8;
+}
+
+/* Buscador */
+.navbar .form-control {
+  background-color: #fffdf5;
+  color: #62503b;
+  border: 1px solid #dfc995;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.navbar .form-control:focus {
+  border-color: #b99a60;
+  box-shadow: 0 0 0 3px rgba(223, 201, 149, 0.25);
+}
+
+/* Botón de búsqueda */
+.navbar .btn-outline-success {
+  color: #70552f !important;
+  border: 1px solid #b99a60 !important;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+/* Hover del botón */
+.navbar .btn-outline-success:hover {
+  background-color: #e7d3a5 !important;
+  color: #604b2d !important;
+}
+
+/* Botón hamburguesa */
+.navbar .navbar-toggler {
+  border-color: #b99a60;
+  border-radius: 7px;
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(223, 201, 149, 0.3);
+}
+
+/* Adaptación a móviles */
+@media (max-width: 991px) {
+  .navbar {
+    padding: 12px 18px;
+  }
+
+  .navbar .navbar-collapse {
+    padding: 14px 0 6px;
+  }
+
+  .navbar .nav-link {
+    padding: 10px 12px !important;
+  }
+
+  .navbar form {
+    margin-top: 12px;
+  }
+}

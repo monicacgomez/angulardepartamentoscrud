@@ -1,0 +1,118 @@
+:host {
+  display: block;
+  padding: 28px;
+  font-family: Arial, sans-serif;
+  color: #62503b;
+}
+
+/* Tabla principal */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #fffdf5;
+  color: #62503b;
+  border: 1px solid #e8d9b8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Encabezados */
+.table thead th,
+.table thead td {
+  padding: 16px;
+  background-color: #f3e5b8 !important;
+  color: #70552f !important;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 2px solid #dfc995;
+}
+
+/* Celdas */
+.table tbody td {
+  padding: 16px;
+  background-color: #fffdf5 !important;
+  color: #62503b !important;
+  font-size: 14px;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee3cc;
+}
+
+/* Alternancia de filas */
+.table tbody tr:nth-child(even) td {
+  background-color: #faf3e3 !important;
+}
+
+/* Efecto hover de las filas */
+.table tbody tr:hover td {
+  background-color: #f5ebd2 !important;
+}
+
+/* Botones generales */
+.table .btn {
+  display: inline-block;
+  margin: 3px;
+  padding: 7px 13px;
+  border: none;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+/* Details */
+.table .btn-light {
+  background-color: #f1e5c8 !important;
+  color: #70552f !important;
+}
+
+/* Edit */
+.table .btn-info {
+  background-color: #e7d3a5 !important;
+  color: #604b2d !important;
+}
+
+/* Delete */
+.table .btn-danger {
+  background-color: #d9a99a !important;
+  color: #683d32 !important;
+}
+
+/* Hover de botones */
+.table .btn-light:hover {
+  background-color: #e8d8b2 !important;
+}
+
+.table .btn-info:hover {
+  background-color: #d8bf88 !important;
+}
+
+.table .btn-danger:hover {
+  background-color: #c98e7e !important;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 700px) {
+  :host {
+    padding: 14px;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  .table thead th,
+  .table thead td,
+  .table tbody td {
+    padding: 9px 7px;
+    font-size: 12px;
+  }
+
+  .table .btn {
+    padding: 6px 8px;
+    font-size: 11px;
+    margin: 2px;
+  }
+}

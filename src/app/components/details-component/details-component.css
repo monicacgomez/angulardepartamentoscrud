@@ -1,0 +1,80 @@
+:host {
+  display: block;
+  padding: 28px;
+  font-family: Arial, sans-serif;
+  color: #62503b;
+}
+
+/* Título principal */
+h1 {
+  margin: 10px 0 24px;
+  color: #70552f;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Enlace para volver */
+p {
+  margin: 0 0 24px;
+}
+
+p a {
+  display: inline-block;
+  color: #967544;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover del enlace */
+p a:hover {
+  color: #604b2d;
+  text-decoration: underline;
+}
+
+/* Lista de detalles */
+.list-group {
+  max-width: 550px;
+  padding: 0;
+  border: 1px solid #e8d9b8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Elementos de la lista */
+.list-group-item {
+  padding: 18px 20px;
+  background-color: #fffdf5;
+  color: #62503b;
+  border: none;
+  border-bottom: 1px solid #eee3cc;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* Alternancia de tonos */
+.list-group-item:nth-child(even) {
+  background-color: #faf3e3;
+}
+
+/* Último elemento */
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+  :host {
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .list-group-item {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+}
